@@ -1,7 +1,11 @@
 package com.stocksphere;
 
+import javax.swing.SwingUtilities;
+import com.stocksphere.ui.LoginFrame;
+
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("StockSphere");
+        SwingUtilities.invokeLater(() -> new LoginFrame());
     }
 }
